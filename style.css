@@ -1,5 +1,66 @@
+:root {
+    --background-color: #1F2937;
+    --color: #F3F4F6;
+}
+
 body {
     font-family: monospace;
-    background-color: #1F2937;
-    color:  #F3F4F6;
+    background-color: var(--background-color);
+    color:  var(--color);
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .left-child {
+    padding: 20px;
+  }
+  
+  .right-child {
+    padding: 20px;
+  }
+  
+
+/* Basic table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid var(--color);
+}
+
+/* Header styles */
+thead th {
+    font-weight: bold;
+}
+
+/* First column styles */
+th:first-child,
+td:first-child {
+    width: 150px;
+    min-width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Last column styles */
+th:last-child,
+td:last-child {
+    width: 200px;
+    min-width: 200px;
 }
